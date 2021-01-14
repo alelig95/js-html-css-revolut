@@ -4,6 +4,10 @@
   margin: 0;
 }
 
+body{
+  font-family: 'Roboto', sans-serif;
+}
+
 .container{
   width: 1200px;
   margin: 0 auto;
@@ -17,7 +21,10 @@
 }
 
 .nav-right{
-  width: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 700px;
 }
 
 .logo{
@@ -29,6 +36,34 @@ li{
   display: inline-block;
   padding-right: 60px;
   font-size: 17px;
+  color: grey;
+}
+
+.nav-left li:nth-child(2){
+  color: black;
+}
+
+.nav-left li:nth-child(3):hover, span:hover, .dropdown-menu li:hover{
+  color: black;
+  cursor: pointer;
+}
+
+.button-1{
+  padding: 15px 20px;
+  background-color: #ccc;
+  color: #000;
+  border: #fff solid 2px;
+  border-radius: 9px;
+  font-weight: bold;
+}
+
+.button-2{
+  padding: 15px 20px;
+  background-color: #000;
+  color: #fff;
+  border: black solid 2px;
+  border-radius: 9px;
+  font-weight: bold;
 }
 
 .has-dropdown{
@@ -38,10 +73,7 @@ li{
 .ul-container{
   display: flex;
   justify-content: space-between;
-}
-
-.grey{
-  color: grey;
+  width: 800px;
 }
 
 .dropdown-menu{
